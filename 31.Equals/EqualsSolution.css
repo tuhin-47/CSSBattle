@@ -1,0 +1,69 @@
+/***********************
+Problem Link : https://cssbattle.dev/play/31
+
+HTML Structure: 
+<div class="container">
+  <div class="left-circle">
+  </div>
+  <div class="right-circle">
+  </div>
+</div>
+
+My Solution Bellow
+************************/
+body { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+  background: #AA445F;
+}
+.container {
+  height: 100vh; 
+  width:100vw; 
+  display:flex; 
+  justify-content:center; 
+  align-items:center; 
+  gap:50px;
+}
+.left-circle { 
+  background:#F7EC7D; 
+  height:200px;
+  width:100px;
+  border-radius:100px 0 0 100px;
+}
+.right-circle { 
+  background: #E38F66; 
+  height: 200px;
+  width: 100px; 
+  border-radius:0 100px 100px 0;
+}
+
+/* I got Idea from following URL : https://dev.to/npranto/cssbattle-31-equals-70h */
+/* there solution :- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: #aa445f;
+  }
+  .semi-circle {
+    width: 200px;
+    height: 100px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .right {
+    background: #e38f66;
+    transform: translate(calc(-50% + 75px), -50%) rotate(90deg);
+  }
+  .left {
+    background: #f7ec7d;
+    transform: translate(calc(-50% - 75px), -50%) rotate(-90deg);
+  }
