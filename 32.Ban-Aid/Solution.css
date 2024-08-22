@@ -1,0 +1,52 @@
+/*******************
+URL : https://cssbattle.dev/play/32
+
+HTML Structure 
+<div class="container">
+  <div class="layer-1">
+    <div class="layer-2">
+      <div class="layer-square">
+      </div>
+    </div>
+  </div>
+</div>
+**************************/
+/* My Solution Bellow */
+
+ * {
+   margin:0; 
+   padding:0; 
+   box-sizing: border-box; 
+ }
+  .container { 
+    height:100vh; 
+    display: flex; 
+    align-items:center; 
+    justify-content: center;
+  }
+  .layer-1 { 
+    background:#F3AC3C; 
+    height:200px;
+    width:50px; 
+    transform: rotate(-45deg);
+  }
+  .layer-2 {
+    background:#A3A368; 
+    height:200px; 
+    width:50px; 
+    transform: rotate(90deg);
+  }
+  .layer-square { 
+    background:#FBE18C; 
+    height:50px; 
+    width:50px; 
+    transform: translate(0%,150%);
+  }
+
+/* Alternative solution. I took idea form here : URL : https://dev.to/npranto/cssbattle-32-band-aid-3685 */
+body, * { margin:0; padding:0; box-sizing: border-box; }
+  
+  .container { height:100vh ;width:100vw; position:relative; }
+  .layer-1 {background:#F3AC3C; height:200px; width:50px; position:absolute; top:50%; left:50%; transform: translate(-50%,-50%) rotate(-45deg);}
+  .layer-2 { background:#A3A368; height:200px; width:50px; position: absolute; top:50%; left:50%; transform: translate(-50%,-50%) rotate(-90deg)}
+.layer-square { background:#FBE18C; height:50px; width:50px; position:absolute; top:37.5%}
