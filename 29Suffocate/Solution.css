@@ -1,0 +1,32 @@
+/********************************************
+ Problem URL : https://cssbattle.dev/play/29
+
+HTML Structure: 
+<div class="container">
+  <div class="box one"></div>
+  <div class="box two"></div></div>
+<div class="container">
+  <div class="box three"></div>
+  <div class="box four"></div></div>
+******************************************/
+/* 
+My Solution with 99.5% Match 
+*/
+body { margin:0; background:#1A4341;}
+.container {
+  margin:0;
+  background:#1A4341;
+  box-sizing:border-box;
+  display:flex;
+}  
+.box {
+    background:#F3AC3C;
+    width:200px;
+    height:150px;
+}
+  .one {
+    border-radius:0 0 60% 0
+  }
+  .two { border-radius: 0 0 0 60% }
+  .three { border-radius: 0 60% 0 0;}
+  .four { border-radius:60% 0 0 0;}
