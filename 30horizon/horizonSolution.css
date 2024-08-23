@@ -1,0 +1,31 @@
+/********************************
+Problem URL : https://cssbattle.dev/play/30
+
+HTML Structure :-
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>
+<div class="four"></div>
+
+****************************/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+.one {
+  background:#F7EC7D;
+  height:50px;
+}
+.two {
+  background:#E38F66;
+  height:50px;
+}
+.three {
+  background:#AA445F;
+  height:100px;
+}
+.four {
+  background:#62306D;
+  height:100px;
+}  
