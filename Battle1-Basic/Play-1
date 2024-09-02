@@ -1,0 +1,15 @@
+/*
+Problem URL : https://cssbattle.dev/play/1
+
+My Solution Bellow:-
+
+*/
+<div></div>
+<style>
+  body {margin:0; padding:0; box-sizing:border-box; background:#5d3a3a;}
+  div {
+    width: 200px;
+    height: 200px;
+    background: #b5e0ba;
+  }
+</style>
