@@ -1,0 +1,25 @@
+/**************************************
+Problem URL : https://cssbattle.dev/play/7
+Time Taken : 20 Minutes 12 Seconds
+
+HTML Structure:
+--------------
+<div class="container">
+  <div class="box one"></div>
+  <div class="box two"></div>
+  <div class="box three"></div>
+</div>
+**************************************/
+ *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#0B2429;}
+  .container {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+  }
+  .box { width:150px; height:150px;}
+  .one {background:#1A4341; position:absolute; border-radius:66% 0; transform:translate(-50px,0px)}
+  .two{background:#998235;position:absolute; border-radius:66% 0;}
+  .three {background:#F3AC3C;position:absolute; border-radius:66% 0;transform:translate(50px,0px)}
