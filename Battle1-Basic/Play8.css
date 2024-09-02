@@ -1,0 +1,73 @@
+/************************************
+Problem URL: https://cssbattle.dev/play/8
+Time Taken: 1 Hour 7 Minute
+
+HTML Strucutre:
+-------------
+<div class="container">
+  <div class="top-box">
+    <div class="key blue"></div>
+    <div class="key light"></div>
+    
+    <div class="key blue"></div>
+    <div class="key light"></div>
+
+    <div class="key blue"></div>
+    <div class="key light"></div>
+
+    <div class="key blue"></div>
+  </div>
+  <div class="middle-box"></div>
+  <div class="bottom-box"></div>
+  
+</div>
+
+************************************/
+*{margin:0;padding:0;box-sizing:border-box;}
+body{ background:#6592CF}
+  .container{
+    height:100vh;
+    display:flex;
+    flex-flow:column;
+    margin-top:50px;
+    align-items:center;
+  }
+  .top-box{
+    
+    width:146px;
+    height:110px;
+    display:flex;
+    
+  }
+  .middle-box{
+    width:146px;
+    height:95px;
+    position:absolute;
+    top:150px;
+    z-index:1;
+    background:#060F55;
+    border-radius: 0 0 70px 70px;
+  }
+  .bottom-box{
+    background:#060F55;
+    width:20px;
+    height:60px;
+    z-index:5;
+    position:absolute;
+    top:240px
+  }
+  .key{
+    width:21px;
+    height:110px;
+    
+    z-index:2;
+    
+  }
+  .blue {
+    background:#060F55;
+    border-radius: 10px 10px 0 0;
+  }
+  .light {
+    background:#6592CF;
+    border-radius: 0 0 10px 10px;
+  }
