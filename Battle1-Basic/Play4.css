@@ -1,0 +1,35 @@
+/************************************
+Problem URL : https://cssbattle.dev/play/4
+Time Taken: 7 minutes 23 Seconds
+
+HTML Structure:
+--------------
+<div class="container">
+  <div class="box one"></div>
+  <div class="box two"></div>
+  <div class="box one"></div>
+<div>
+
+*************************************/
+* {margin:0;padding:0;box-sizing:border-box;}
+  body{background:#62306D;}
+  .container {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    margin-left:50px;
+    align-items:center;
+  }
+
+  .box {
+    height:100px;
+    width:100px;
+    background:#F7EC7D;
+    border-radius:50px 50px 0 0
+  }
+  .one {
+    transform:translateY(50px) rotate(180deg);
+  }
+  .two {
+    transform:translateY(-50px);
+  }
