@@ -1,0 +1,23 @@
+/****************************************
+Problem URL : https://cssbattle.dev/play/6
+Time Taken: 11 Minute 49 Seconds
+
+HTML Structre :
+<div class="container">
+  <div class="box"></div>
+</div>
+****************************************/
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#E3516E;}
+  .container{display:flex;align-items:center;justify-content:center;height:100vh;}
+  .box{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+      background-image:conic-gradient(
+        #FADE8B 0deg, #FADE8B 90deg,
+        #E3516E 90deg, #E3516E 180deg,
+        #F7F3D7 180deg, #F7F3D7 270deg,
+        #51B5A9 270deg
+      );
+      }
