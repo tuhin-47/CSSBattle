@@ -1,0 +1,46 @@
+/******************************************
+Problem URL : https://cssbattle.dev/play/2
+
+My HTML Structure:
+-----------------
+<div class="container">
+  <div class="wrapper-one">
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+  <div class="wrapper-two">
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</div>
+*********************************/
+body {margin:0; padding:0;box-sizing:border-box; background:#62374e}
+  .container {
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
+  .wrapper-one{
+    display:flex;
+    justify-content:space-between;
+    height:100px;
+    align-items:flex-end;
+    margin-left:50px;
+    margin-right:50px;
+  }
+  .wrapper-two{
+    display:flex;
+    justify-content:space-between;
+    height:100px;
+    margin-left:50px;
+    margin-right:50px;
+  }
+
+  .box {
+    width:50px;
+    height:50px;
+    background:#fdc57b;
+  }
+  
