@@ -1,0 +1,44 @@
+/**************
+Problem URL : https://cssbattle.dev/play/kGROlyGAH15U4NjWYbjJ
+
+My HTML Structure :
+------------------
+<div class="box">
+  <div class="inner-box"></div>
+  <div class="inner-white-box"></div>
+</div>
+
+*************/
+
+  *{ margin:0; padding:0;box-sizing:border-box;}
+  
+  body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#B6EBE7;
+  }
+  .box {
+    height:200px;
+    width:200px;
+    border:50px solid #9382E4;
+    position:relative;
+  }
+  
+  .inner-box{
+    height:200px;
+    width:200px;
+    border:50px solid #9382E4;
+    position:absolute;
+    left:-50%;
+    top:-50%;
+    transform:rotate(45deg);
+  }
+  .inner-white-box {
+    height:100px;
+    width:100px;
+    background:#B6EBE7;
+    z-index:1;
+    position:absolute;
+  }
+
